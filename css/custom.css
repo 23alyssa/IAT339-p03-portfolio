@@ -1,0 +1,173 @@
+/*Custom CSS Overrides Bootstrap Styling*/
+
+:root {
+    --yellow: #FDDB3A;
+    --yellow-shade: #EECD32;
+    --dark-grey: #41413A;
+    --black: #232320;
+    --white: #F9F8F4;
+    --light-grey: #E2E0D9;
+  }
+
+
+/* ----- 1. BRANDING -------------------------------------------------------*/
+
+.color-item-top {
+    height: 4em;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.color-item-bottom {
+    height: 4em;
+    border-radius: 0rem 0rem 0.8rem 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.bkg-yellow {
+    background-color: var(--yellow);
+}
+
+.bkg-yellow-shade {
+    background-color: var(--yellow-shade);
+}
+
+.bkg-dark-grey {
+    background-color: var(--dark-grey);
+}
+
+.bkg-black {
+    background-color: var(--black);
+}
+
+.bkg-white {
+    background-color: var(--white);
+}
+
+.bkg-light-grey {
+    background-color: var(--light-grey);
+}
+
+
+/* ----- 2. TEXT & TYPOGRAPHY -------------------------------------------------------*/
+
+.section-border {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    border-bottom-width: 0.15rem;
+    border-bottom-style: solid;
+    border-bottom-color: #A7A7A7;
+}
+
+.h1 {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    color: var(--black);
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h3 {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h4 {
+    color: var(--light-grey);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h5 {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.caption {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+p {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.938rem;
+}
+
+.txt-nav {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.txt-nav:hover, .txt-nav:focus {
+    color: var(--dark-grey);
+    text-decoration: underline;
+}
+
+.txt-italic-subtitle {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: normal;
+
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    border-bottom-width: 0.15rem;
+    border-bottom-style: dashed;
+    border-bottom-color: var(--light-grey);
+
+}
+
+
+/* ----- 3. INTERACTIVE -------------------------------------------------------*/
+
+
+/* ----- 4. GRID & LAYOUT -------------------------------------------------------*/
+
+.grid-border {
+    border: 1px solid grey;
+    background: lightblue;
+}
+
+
+/* ----- 5. COMBINED ELEMENTS -------------------------------------------------------*/
+
+
+/* ----- 6. TEMPLATES -------------------------------------------------------*/
+
+
+/* ----- 7. CITATIONS -------------------------------------------------------*/
