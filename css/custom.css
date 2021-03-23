@@ -122,30 +122,6 @@ p, ol, ul {
     line-height: 1.948rem;
 }
 
-.txt-nav {
-    color: var(--black);
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.txt-p-link {
-    color: var(--black);
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1.948rem;
-    text-decoration: none;
-}
-
-.txt-nav:hover, .txt-nav:focus, .txt-p-link:hover, .txt-p-link:focus {
-    color: var(--dark-grey);
-    text-decoration: underline;
-}
-
 .txt-italic-subtitle {
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
@@ -177,6 +153,30 @@ p, ol, ul {
 
 
 /* ----- 3. INTERACTIVE -------------------------------------------------------*/
+
+.txt-p-link {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.948rem;
+    text-decoration: none;
+}
+
+ .txt-p-link:hover, .txt-p-link:focus, .txt-foot-link:hover, .txt-foot-link:focus {
+    color: var(--yellow-shade);
+}
+
+.txt-foot-link {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.948rem;
+    text-decoration: none;
+}
 
 .btn-fill {
     text-shadow:none;
@@ -362,6 +362,39 @@ input[type=radio], input[type=checkbox] {
 
 
 /* ----- 5. COMBINED ELEMENTS -------------------------------------------------------*/
+
+.navbar-nav {
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.txt-nav {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.txt-nav:hover, .txt-nav:focus {
+    color: var(--yellow-shade);
+}
+
+/* foot content*/
+
+.bg-footer {
+    background-color: var(--light-grey);
+}
+
+.bg-copywrite {
+    background-color: var(--dark-grey);
+}
+
+.txt-footer {
+    color: var(--light-grey);
+}
 
 
 /* ----- 6. TEMPLATES -------------------------------------------------------*/
