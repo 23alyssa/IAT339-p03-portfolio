@@ -178,22 +178,35 @@ p, ol, ul {
 
 /* ----- 3. INTERACTIVE -------------------------------------------------------*/
 
-.btn-call-action {
-    background-color: var(--yellow);
-    color: var(--black);
+.btn-fill {
+    text-shadow:none;
+    border-style: none;
+    background-color: transparent;
+
     padding: 0.6rem 1.5rem 0.6rem 1.3rem;
-    width: 20%;
+    width: 11em;
     cursor: pointer;
 
     font-family: 'Work Sans', sans-serif;
     font-size: 1.1rem;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
     text-align: center;
+    letter-spacing: 0.05em;
 
     transition-duration: 0.2s;
     border-radius: 2rem 2rem 2rem 2rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+}
+
+.btn-call-action {
+    background-color: var(--yellow);
+    color: var(--black);
 }
 
 .btn-call-action:hover, .btn-call-action:focus {
@@ -201,13 +214,75 @@ p, ol, ul {
     color: var(--dark-grey);
 }
 
+.btn-dark {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.btn-outline-action {
+    border: 0.25rem solid var(--yellow);
+    color: var(--yellow);
+    width: 11rem;
+}
+
+.btn-outline-action:hover, .btn-outline-action:focus {
+    background-color: var(--yellow);
+    color: var(--dark-grey);
+}
+
+.btn-outline-dark {
+    border: 0.25rem solid var(--dark-grey);
+    color: var(--dark-grey);
+    width: 11rem;
+}
+
+.btn-outline-dark:hover, .btn-outline-dark:focus {
+    border: 0.25rem solid var(--black);
+    color: var(--white);
+}
+
+.btn-submit {
+    width: 8em;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.btn-submit:hover, .btn-submit:focus {
+    background-color: var(--yellow-shade);
+    color: var(--dark-grey);
+}
+
+.btn-reset {
+    width: 8em;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn-reset:hover, .btn-reset:focus {
+    background-color: var(--black);
+    color: var(--white);
+}
 
 
-/* ----- 4. GRID & LAYOUT -------------------------------------------------------*/
+
+/* ----- 4. GRID & LAYOUT & SPACING -------------------------------------------------------*/
 
 .grid-border {
     border: 1px solid grey;
     background: lightblue;
+}
+
+.margin-left {
+    margin-left: 2em;
 }
 
 
