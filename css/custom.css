@@ -272,6 +272,65 @@ p, ol, ul {
     color: var(--white);
 }
 
+label {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: var(--light-grey);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.1rem;
+    overflow: visible;
+}
+
+input[type=text], textarea {
+    border-radius: 0.5rem;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+
+    background: #fff;
+    border: 0.12rem solid var(--light-grey);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    outline-color: var(--yellow);
+    overflow: hidden;
+    transition: .2s border-color;
+}
+
+input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
+    color: var(--black);
+    border: 0.12rem var(--yellow-shade) solid;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--yellow);
+}
+
+.img-link {
+    padding: 0.3rem;
+    max-width: 30%;
+    margin-top: 1rem;
+}
+
+.img-link:hover, .img-link:focus {
+    opacity: 0.5;
+}
+
 
 
 /* ----- 4. GRID & LAYOUT & SPACING -------------------------------------------------------*/
@@ -281,8 +340,24 @@ p, ol, ul {
     background: lightblue;
 }
 
+.row-bkg-grid div{
+    border: 1px solid var(--black);
+}
+
+.row-bkg-grid:nth-child(odd) {
+    background-color: var(--yellow);
+}
+  
+.row-bkg-grid:nth-child(even) {
+    background-color: var(--light-grey);
+}
+
 .margin-left {
     margin-left: 2em;
+}
+
+.margin-bottom {
+    margin-bottom: 2em;
 }
 
 
