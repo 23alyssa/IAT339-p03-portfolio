@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/breakpoints.css" rel="stylesheet">
 
     <title>Style Guide</title>
   </head>
@@ -224,20 +225,123 @@
 
                     <h5>Rendered Element:</h5>
 
-                    <p class="row">
+                    <p class="row m-1">
                         Will take up the space of container/flex grid, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.
                     </p>
 
                     <h5>CSS Selector:</h5>
                     <p>p //paragraph body</p>
+                    <p>.m-1 //paragraph body</p>
+                    <p>h3 //small page title</p>
+                    <p>h5 //paragraph subtitle</p>
+                 </section> <!-- end paragraph -->
 
+                 <!-- headings & paragraphs  -->
+                 <section class="row">
+                    <h4 class="txt-italic-subtitle">Heading & Paragraph</h4>
 
-                 </section>
+                    <h5>Rendered Element:</h5>
 
+                    <div class="row m-1">
+                        <h3>Major Title</h3>
+                        <p class="m-1">  
+                            Will take up the space of container/flex grid, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.
+                        </p>
+                    </div>
 
+                    <div class="row m-1">
+                        <h5>Minor Title</h5>
+                        <p class="m-1">  
+                            Will take up the space of container/flex grid, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.
+                        </p>
+                    </div>
+
+                    <h5>CSS Selector:</h5>
+                    <p>p </p>
+
+                 </section> <!-- end paragraph -->
+
+                 <!-- Unordered List -->
+                 <section class="row">
+                    <h4 class="txt-italic-subtitle">Unordered Lists</h4>
+
+                    <h5>Rendered Element:</h5>
+
+                    <ul class="row">
+                        <li>list item a</li>
+                        <li>list item b</li>
+                        <li>list item c</li>
+                    </ul>
+
+                    <h5>CSS Selector:</h5>
+                    <p>p //paragraph body</p>
+                 </section> <!-- end unorder list -->
+
+                 <!-- Ordered List -->
+                 <section class="row">
+                    <h4 class="txt-italic-subtitle">Unordered Lists</h4>
+
+                    <h5>Rendered Element:</h5>
+
+                    <ol class="row">
+                        <li>list item a</li>
+                        <li>list item b</li>
+                        <li>list item c</li>
+                    </ol>
+
+                    <h5>CSS Selector:</h5>
+                    <p>p //paragraph body</p>
+                 </section> <!-- ordered list -->
             </section> <!-- end typography section -->
 
-            
+             <!------------------------- INTERACTIVE ------------------------------------------>
+             <section id="interactive">
+                <h3 class="section-border">Interactive</h3>
+
+                <!-- In-Text Link -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">In-Text Link</h4>
+
+                    <h5>Rendered Element:</h5>
+
+                    <a class="txt-p-link" href="#">This is an example</a>
+
+                    <div class="row">
+                        <p>This is a paragraph element. It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                        <a class="txt-p-link" href="#">This is an example</a>
+                        . The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+
+                    <h5>CSS Selector:</h5>
+                    <p>txt-p-link</p>
+                </section> <!-- end in-text-link -->
+
+                <!-- Nav Link -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Navigation Link</h4>
+
+                    <h5>Rendered Element:</h5>
+
+                    <a class="row txt-nav p-2" href="#interactive">Interactive</a>
+
+                    <h5>CSS Selector:</h5>
+                    <p>.txt-nav</p>
+                    <p>.p-2</p>
+                </section> <!-- nav in-text-link -->
+
+                <!-- Button - Call to Action -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Button - Call to Action</h4>
+
+                    <h5>Rendered Element:</h5>
+
+                    <a class="btn-call-action" href="#interactive">See Work</a>
+
+                    <h5>CSS Selector:</h5>
+                    <p>.txt-nav</p>
+                    <p>.p-2</p>
+                </section> <!-- nav in-text-link -->
+             </section> <!-- end typography section -->
             
         </div>
     </div>

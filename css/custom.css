@@ -113,13 +113,13 @@ h5 {
     font-variant: small-caps;
 }
 
-p {
+p, ol, ul {
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: normal;
-    line-height: 1.748rem;
+    line-height: 1.948rem;
 }
 
 .txt-nav {
@@ -131,7 +131,17 @@ p {
     text-decoration: none;
 }
 
-.txt-nav:hover, .txt-nav:focus {
+.txt-p-link {
+    color: var(--black);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.948rem;
+    text-decoration: none;
+}
+
+.txt-nav:hover, .txt-nav:focus, .txt-p-link:hover, .txt-p-link:focus {
     color: var(--dark-grey);
     text-decoration: underline;
 }
@@ -167,6 +177,30 @@ p {
 
 
 /* ----- 3. INTERACTIVE -------------------------------------------------------*/
+
+.btn-call-action {
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 0.6rem 1.5rem 0.6rem 1.3rem;
+    width: 20%;
+    cursor: pointer;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    transition-duration: 0.2s;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.btn-call-action:hover, .btn-call-action:focus {
+    background-color: var(--yellow-shade);
+    color: var(--dark-grey);
+}
+
 
 
 /* ----- 4. GRID & LAYOUT -------------------------------------------------------*/
