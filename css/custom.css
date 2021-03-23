@@ -89,7 +89,7 @@ h3 {
 }
 
 h4 {
-    color: var(--light-grey);
+    color: var(--dark-grey);
     font-family: 'Work Sans', sans-serif;
     font-size: 1.8rem;
     font-style: normal;
@@ -116,10 +116,10 @@ h5 {
 p {
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: normal;
-    line-height: 1.938rem;
+    line-height: 1.748rem;
 }
 
 .txt-nav {
@@ -151,6 +151,19 @@ p {
     border-bottom-color: var(--light-grey);
 
 }
+
+.txt-headings-info {
+    /* for style guide only*/
+    color: #A7A7A7;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    border-top-width: 0.1rem;
+    border-top-style: solid;
+    border-top-color: #A7A7A7;
+    max-width: 65%;
+  }
 
 
 /* ----- 3. INTERACTIVE -------------------------------------------------------*/
