@@ -9,8 +9,6 @@
     --light-grey: #E2E0D9;
   }
 
-
-
 /* ----- 1. BRANDING -------------------------------------------------------*/
 
 .color-item-top {
@@ -155,7 +153,7 @@ p, ol, ul {
     max-width: 65%;
 }
 
-.txt-secondar-color {
+.txt-secondary-color {
     color: var(--dark-grey);
 }
 
@@ -339,22 +337,30 @@ input[type=radio], input[type=checkbox] {
     color: var(--yellow);
 }
 
+
+
 .img-link {
     padding: 0.3rem;
     max-width: 30%;
     margin-top: 1rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .img-link-project-home {
     padding: 0.3rem;
     max-width: 100%;
     margin-top: 1rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .img-link:hover, .img-link:focus, .img-link-project-home:hover, .img-link-project-home:focus {
     opacity: 0.5;
 }
 
+
+.drop-shadow {
+    box-shadow: 0px 0.4375em 0.625em rgba(0, 0, 0, 0.07);
+}
 
 
 /* ----- 4. GRID & LAYOUT & SPACING -------------------------------------------------------*/
@@ -392,12 +398,20 @@ input[type=radio], input[type=checkbox] {
     margin-top: 9em;
 }
 
+.margin-t-3 {
+    margin-top: 3em;
+}
+
 .margin-b-1 {
     margin-bottom: 1em;
 }
 
 .margin-b-4 {
     margin-bottom: 4em;
+}
+
+.padding-b-3 {
+    padding-bottom: 3em;
 }
 
 
@@ -441,6 +455,7 @@ input[type=radio], input[type=checkbox] {
     background-color: var(--white);
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
+
 
 
 /* ----- 6. TEMPLATES -------------------------------------------------------*/
