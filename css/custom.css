@@ -10,6 +10,7 @@
   }
 
 
+
 /* ----- 1. BRANDING -------------------------------------------------------*/
 
 .color-item-top {
@@ -91,8 +92,8 @@ h3 {
 h4 {
     color: var(--dark-grey);
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.8rem;
-    font-style: normal;
+    font-size: 1.6rem;
+    font-style: italic;
     font-weight: normal;
 }
 
@@ -102,6 +103,9 @@ h5 {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: bold;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .caption {
@@ -225,6 +229,16 @@ p, ol, ul {
     color: var(--white);
 }
 
+.btn-light {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.btn-light:hover, .btn-light:focus {
+    background-color: var(--light-grey);
+    color: var(--black);
+}
+
 .btn-outline-action {
     border: 0.25rem solid var(--yellow);
     color: var(--yellow);
@@ -327,7 +341,13 @@ input[type=radio], input[type=checkbox] {
     margin-top: 1rem;
 }
 
-.img-link:hover, .img-link:focus {
+.img-link-project-home {
+    padding: 0.3rem;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.img-link:hover, .img-link:focus, .img-link-project-home:hover, .img-link-project-home:focus {
     opacity: 0.5;
 }
 
@@ -360,6 +380,10 @@ input[type=radio], input[type=checkbox] {
     margin-bottom: 2em;
 }
 
+.margin-top {
+    margin-top: 2em;
+}
+
 
 /* ----- 5. COMBINED ELEMENTS -------------------------------------------------------*/
 
@@ -384,7 +408,7 @@ input[type=radio], input[type=checkbox] {
 
 /* foot content*/
 
-.bg-footer {
+.bg-light-grey {
     background-color: var(--light-grey);
 }
 
@@ -394,6 +418,12 @@ input[type=radio], input[type=checkbox] {
 
 .txt-footer {
     color: var(--light-grey);
+}
+
+.bg-project-details {
+    padding: 2.5em;
+    background-color: var(--white);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 
