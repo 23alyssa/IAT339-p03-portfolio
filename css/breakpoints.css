@@ -23,6 +23,15 @@
         line-height: 1.7rem;
     }
 
+    .bg-project-details {
+        padding: 1em;
+        margin: 0.5em;
+    }
+
+    #project-1-description {
+        margin-right: 0.5em;
+    }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */

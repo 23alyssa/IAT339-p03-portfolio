@@ -382,6 +382,10 @@ input[type=radio], input[type=checkbox] {
     margin-left: 2em;
 }
 
+.margin-right {
+    margin-right: 3em;
+}
+
 .margin-bottom {
     margin-bottom: 2em;
 }
@@ -456,8 +460,34 @@ input[type=radio], input[type=checkbox] {
     width: 100%;
 }
 
+.img-100-nb {
+    width: 100%;
+}
+
 
 /* ----- 6. TEMPLATES -------------------------------------------------------*/
 
+.project-1-bkg-img {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    padding: 0rem;
+    display: table;
+    height: 87vh;
+    background-image:url("background-header.png");
+}
+
+.project-title {
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* text-shadow: 1px 1px 40px var(--dark-grey); */
+}
 
 /* ----- 7. CITATIONS -------------------------------------------------------*/
