@@ -58,10 +58,6 @@
     border-bottom-color: #A7A7A7;
 }
 
-.h1 {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Work Sans', sans-serif;
-}
 
 h1 {
     color: var(--black);
@@ -456,6 +452,9 @@ input[type=radio], input[type=checkbox] {
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
+.img-100 {
+    width: 100%;
+}
 
 
 /* ----- 6. TEMPLATES -------------------------------------------------------*/
