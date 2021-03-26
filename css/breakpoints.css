@@ -23,6 +23,10 @@
         line-height: 1.7rem;
     }
 
+    li {
+        font-size: 1rem;
+    }
+
     .bg-project-details {
         padding: 1em;
         margin: 0.5em;
