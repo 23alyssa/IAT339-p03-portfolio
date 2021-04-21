@@ -1,5 +1,6 @@
 /*! Variables: contained within this file are all your resets, variables, mixins, and any utility classes. */
 
+@use "components";
 
 /* ------- COLOR VARIABLES ------- */
 $yellow: #FDDB3A;
@@ -8,3 +9,123 @@ $dark-grey: #41413A;
 $black: #232320;
 $white: #F9F8F4;
 $light-grey: #E2E0D9;
+
+
+
+
+
+
+
+/* ------- MIXINS ------- */
+
+/* font styles with colour */
+@mixin set-font($color, $name, $size, $style, $weight) {
+    color: $color;
+    font: {
+        family: $name, sans-serif;
+        size: $size;
+        style: $style;
+        weight: $weight;
+    }
+ }
+
+ /* font styles without colour */
+ @mixin set-font-interactive($name, $size, $style, $weight) {
+    font: {
+        family: $name, sans-serif;
+        size: $size;
+        style: $style;
+        weight: $weight;
+    }
+ }
+
+ @mixin bkg-text-colour($background-c, $color) {
+    background-color: $background-c;
+    color: $color; 
+ }
+
+ /* basic button properties */
+ @mixin btn($background-c, $color) {
+    
+    border-style: none;
+    background-color: transparent;
+
+    padding: 0.6rem 1.5rem 0.6rem 1.3rem;
+    width: 11em;
+    cursor: pointer;
+
+    @include set-font-interactive('Work Sans', 1.1rem, normal, 700);
+    text: {
+        shadow: none;
+        decoration: none;
+        align: center;
+    }
+    letter-spacing: 0.05em;
+
+    transition-duration: 0.2s;
+    border-radius: 2rem 2rem 2rem 2rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+
+    @include bkg-text-colour($background-c, $color);
+ }
+
+ /* background image for projects */
+
+ @mixin project-bkg-img($img) {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    padding: 0rem;
+    display: table;
+    height: 87vh;
+    background-image:url($img);
+}
+
+
+
+
+
+/* ------- VENDOR PREFIX MIXINS ------- */
+
+@mixin box-shadow($value){
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -ms-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin border-radius($value){
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    -ms-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin flex-direction($value){
+    -moz-flex-direction: $value;
+    -webkit-flex-direction: $value;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+
+@mixin align-items($value){
+    -moz-align-items: $value;
+    -webkit-align-items: $value;
+    -ms-align-items: $value;
+    align-items: $value;
+}
+
+@mixin justify-content($value){
+    -moz-justify-content: $value;
+    -webkit-justify-content: $value;
+    -ms-justify-content: $value;
+    justify-content: $value;
+}

@@ -1,15 +1,17 @@
 /*! Components: anything reusable such as buttons, navbars, cards etc. */
 
+@use "variables";
+
 /* ----- 1. BRANDING -------------------------------------------------------*/
 
 .color-item-top {
     height: 4em;
-    border-radius: 0.8rem 0.8rem 0rem 0rem;
+    @include border-radius(0.8rem 0.8rem 0rem 0rem);
 }
 
 .color-item-bottom {
     height: 4em;
-    border-radius: 0rem 0rem 0.8rem 0.8rem;
+    @include border-radius(0rem 0rem 0.8rem 0.8rem);
     margin-bottom: 1rem;
 }
 
@@ -42,101 +44,75 @@
 
 .section-border {
     margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    border-bottom-width: 0.15rem;
-    border-bottom-style: solid;
-    border-bottom-color: #A7A7A7;
+    padding: {
+        bottom: 2rem;
+        top: 1rem;
+    }
+    border: {
+        bottom-width: 0.15rem;
+        bottom-style: solid;
+        bottom-color:  #A7A7A7;
+    }
 }
 
-
 h1 {
-    color: $black;
-    font-family: 'Raleway', sans-serif;
-    font-size: 4.5rem;
-    font-style: normal;
-    font-weight: bold;
+    @include set-font($black, 'Raleway', 4.5rem, normal, bold);
 }
 
 h2 {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 500;
+    @include set-font($black, 'Work Sans', 3rem, normal, 500);
 }
 
 h3 {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2.2rem;
-    font-style: normal;
-    font-weight: normal;
+    @include set-font($black, 'Work Sans', 2.2rem, normal, normal);
 }
 
 h4 {
-    color: $dark-grey;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.6rem;
-    font-style: italic;
-    font-weight: normal;
+    @include set-font($dark-grey, 'Work Sans', 1.6rem, italic, normal);
 }
 
 h5 {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: bold;
-
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    @include set-font($black, 'Work Sans', 1.5rem, normal, bold);
+    margin: {
+        top: 2rem;
+        bottom: 2rem;
+    }
 }
 
 .caption {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: normal;
+    @include set-font($black, 'Work Sans', 1.5rem, normal, normal);
     font-variant: small-caps;
 }
 
 p, ol, ul {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: normal;
+    @include set-font($black, 'Work Sans', 1.3rem, normal, normal);
     line-height: 1.948rem;
 }
 
 .txt-italic-subtitle {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.8rem;
-    font-style: italic;
-    font-weight: normal;
+    @include set-font($black, 'Work Sans', 1.8rem, italic, normal);
 
     margin-top: 3rem;
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
-    border-bottom-width: 0.15rem;
-    border-bottom-style: dashed;
-    border-bottom-color: $light-grey;
-
+    padding: {
+        bottom: 1rem;
+        top: 0.5rem;
+    }
+    border: {
+        bottom-width: 0.15rem;
+        bottom-style: dashed;
+        bottom-color: $light-grey;
+    }
 }
 
 .txt-headings-info {
     /* for style guide only*/
-    color: #A7A7A7;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1rem;
-    border-top-width: 0.1rem;
-    border-top-style: solid;
-    border-top-color: #A7A7A7;
+    @include set-font(#A7A7A7, 'Open Sancs', 1.1rem, normal, normal);
+
+    border: {
+        top-width: 0.1rem;
+        top-style: solid;
+        top-color: #A7A7A7;
+    }
     max-width: 65%;
 }
 
@@ -146,170 +122,118 @@ p, ol, ul {
 
 li {
     font-size: 1.6rem;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: {
+        top: 1em;
+        bottom: 1em;
+    }
 }
 
 
 /* ----- 3. INTERACTIVE -------------------------------------------------------*/
 
 .txt-p-link {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: bold;
+    @include set-font($black, 'Work Sans', 1.3rem, normal, bold);
     line-height: 1.948rem;
     text-decoration: none;
-}
-
- .txt-p-link:hover, .txt-p-link:focus, .txt-foot-link:hover, .txt-foot-link:focus {
-    color: $yellow-shade;
 }
 
 .txt-foot-link {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: normal;
+    @include set-font($black, 'Work Sans', 1.3rem, normal, normal);
     line-height: 1.948rem;
     text-decoration: none;
 }
 
-.btn-fill {
-    text-shadow:none;
-    border-style: none;
-    background-color: transparent;
 
-    padding: 0.6rem 1.5rem 0.6rem 1.3rem;
-    width: 11em;
-    cursor: pointer;
-
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 700;
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: 0.05em;
-
-    transition-duration: 0.2s;
-    border-radius: 2rem 2rem 2rem 2rem;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    align-self: start;
+.txt-p-link:hover, .txt-p-link:focus, .txt-foot-link:hover, .txt-foot-link:focus {
+    color: $yellow-shade;
 }
 
+
 .btn-call-action {
-    background-color: $yellow;
-    color: $black;
+    @include btn($yellow, $black);
 }
 
 .btn-call-action:hover, .btn-call-action:focus {
-    background-color: $yellow-shade;
-    color: $dark-grey;
+    @include bkg-text-colour($yellow-shade, $dark-grey);
 }
 
 .btn-dark {
-    background-color: $dark-grey;
-    color: $white;
+    @include btn($dark-grey, $white);
     font-weight: 500;
 }
 
 .btn-dark:hover, .btn-dark:focus {
-    background-color: $black;
-    color: $white;
+    @include bkg-text-colour($black, $white);
 }
 
 .btn-light {
-    background-color: $white;
-    color: $black;
+    @include btn($white, $black);
 }
 
 .btn-light:hover, .btn-light:focus {
-    background-color: $light-grey;
-    color: $black;
+    @include bkg-text-colour($light-grey, $black);
 }
 
 .btn-outline-action {
+    @include btn(transparent, $yellow);
     border: 0.25rem solid $yellow;
-    color: $yellow;
     width: 11rem;
 }
 
 .btn-outline-action:hover, .btn-outline-action:focus {
-    background-color: $yellow;
-    color: $dark-grey;
+    @include bkg-text-colour($yellow, $dark-grey);
 }
 
 .btn-outline-dark {
+    @include btn(transparent, $dark-grey);
     border: 0.25rem solid $dark-grey;
-    color: $dark-grey;
     width: 11rem;
 }
 
 .btn-outline-dark:hover, .btn-outline-dark:focus {
-    border: 0.25rem solid $black;
-    color: $white;
+    border: 0.25rem solid $dark-grey;
+    @include bkg-text-colour($dark-grey, $white);
 }
 
 .btn-submit {
+    @include btn($yellow, $black);
     width: 8em;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    background-color: $yellow;
-    color: $black;
+    @include border-radius(0.5rem 0.5rem 0.5rem 0.5rem);
 }
 
 .btn-submit:hover, .btn-submit:focus {
-    background-color: $yellow-shade;
-    color: $dark-grey;
+    @include bkg-text-colour($yellow-shade, $dark-grey);
 }
 
 .btn-reset {
+    @include btn($dark-grey, $white);
     width: 8em;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    background-color: $dark-grey;
-    color: $white;
+    @include border-radius(0.5rem 0.5rem 0.5rem 0.5rem);
     font-weight: 500;
 }
 
 .btn-reset:hover, .btn-reset:focus {
-    background-color: $black;
-    color: $white;
+    @include bkg-text-colour($black, $white);
 }
 
 label {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: bold;
+    @include set-font($black, 'Work Sans', 1.3rem, normal, bold);
 }
 
 ::placeholder {
-    color: $light-grey;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: normal;
+    @include set-font($light-grey, 'Work Sans', 1.1rem, normal, normal);
     line-height: 1.1rem;
     overflow: visible;
 }
 
 input[type=text], textarea {
-    border-radius: 0.5rem;
+    @include border-radius(0.5rem);
 
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: normal;
+    @include set-font-interactive('Work Sans', 1rem, normal, normal);
 
     background: #fff;
     border: 0.12rem solid $light-grey;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, .1));
     padding: 0.7rem;
     margin-bottom: 1rem;
     width: 100%;
@@ -336,14 +260,14 @@ input[type=radio], input[type=checkbox] {
     padding: 0.3rem;
     max-width: 30%;
     margin-top: 1rem;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    @include border-radius(0.5rem 0.5rem 0.5rem 0.5rem);
 }
 
 .img-link-project-home {
     padding: 0.3rem;
     max-width: 100%;
     margin-top: 1rem;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    @include border-radius(0.5rem 0.5rem 0.5rem 0.5rem);
 }
 
 .img-link:hover, .img-link:focus, .img-link-project-home:hover, .img-link-project-home:focus {
@@ -352,7 +276,7 @@ input[type=radio], input[type=checkbox] {
 
 
 .drop-shadow {
-    box-shadow: 0px 0.4375em 0.625em rgba(0, 0, 0, 0.07);
+    @include box-shadow(0px 0.4375em 0.625em rgba(0, 0, 0, 0.07));
 }
 
 
@@ -415,17 +339,11 @@ input[type=radio], input[type=checkbox] {
 /* ----- 5. COMBINED ELEMENTS -------------------------------------------------------*/
 
 .navbar-nav {
-    flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
+    @include flex-direction(row);
 }
 
 .txt-nav {
-    color: $black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
+    @include set-font($black, 'Work Sans', 1.5rem, normal, 500);
     text-decoration: none;
 }
 
@@ -450,7 +368,7 @@ input[type=radio], input[type=checkbox] {
 .bg-project-details {
     padding: 2.5em;
     background-color: $white;
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    @include border-radius(0.5rem 0.5rem 0.5rem 0.5rem);
 }
 
 .img-100 {
@@ -465,31 +383,11 @@ input[type=radio], input[type=checkbox] {
 /* ----- 6. TEMPLATES -------------------------------------------------------*/
 
 .project-1-bkg-img {
-    left: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    max-width: 100vw;
-    position: relative;
-    right: 50%;
-    width: 100vw;
-    padding: 0rem;
-    display: table;
-    height: 87vh;
-    background-image:url("background-header.png");
+    @include project-bkg-img("background-header.png");
 }
 
 .project-2-bkg-img {
-    left: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    max-width: 100vw;
-    position: relative;
-    right: 50%;
-    width: 100vw;
-    padding: 0rem;
-    display: table;
-    height: 87vh;
-    background-image:url("background-header-p2.png");
+    @include project-bkg-img("background-header-p2.png");
 }
 
 .project-title {
@@ -497,8 +395,8 @@ input[type=radio], input[type=checkbox] {
     padding-bottom: 20vh;
     text-align: center;
     font-weight: 500;
-    justify-content: center;
-    align-items: center;
+    @include justify-content(center);
+    @include align-items(center);
     /* text-shadow: 1px 1px 40px var(--dark-grey); */
 }
 
