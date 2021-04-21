@@ -1,6 +1,6 @@
 /*! Components: anything reusable such as buttons, navbars, cards etc. */
 
-@use "variables";
+
 
 /* ----- 1. BRANDING -------------------------------------------------------*/
 
@@ -177,7 +177,6 @@ li {
 .btn-outline-action {
     @include btn(transparent, $yellow);
     border: 0.25rem solid $yellow;
-    width: 11rem;
 }
 
 .btn-outline-action:hover, .btn-outline-action:focus {
@@ -187,7 +186,6 @@ li {
 .btn-outline-dark {
     @include btn(transparent, $dark-grey);
     border: 0.25rem solid $dark-grey;
-    width: 11rem;
 }
 
 .btn-outline-dark:hover, .btn-outline-dark:focus {
