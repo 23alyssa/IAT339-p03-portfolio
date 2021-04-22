@@ -89,6 +89,16 @@
         width: 90vw;
         padding-bottom: 0.6em;
     }
+
+    .offset-6 {
+        margin-left: 40%;
+    }
+
+    .mobile-center {
+        @include justify-content(center);
+        @include align-items(center);
+        text-align: center;
+    }
   
 }
 
