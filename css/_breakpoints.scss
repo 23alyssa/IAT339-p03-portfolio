@@ -89,6 +89,11 @@
         width: 90vw;
         padding-bottom: 0.6em;
     }
+
+    #nav-toggle.hidden, #nav-items.hidden {
+        visibility: visible;
+        display: inline-block;
+    }
   
 }
 
