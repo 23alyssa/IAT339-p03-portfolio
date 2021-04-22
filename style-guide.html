@@ -25,14 +25,15 @@
     <div class="row py-3">
         <div class="col-sm-2" id="sticky-sidebar">
             <nav class="sticky-top">
-                <a class="row txt-nav p-2" href="#portfolio">Portfolio</a>
-                <a class="row txt-nav p-2" href="#branding">Branding</a>
-                <a class="row txt-nav p-2" href="#typography">Typography</a>
-                <a class="row txt-nav p-2" href="#interactive">Interactive</a>
-                <a class="row txt-nav p-2" href="#layout">Layout/Grid</a>
-                <a class="row txt-nav p-2" href="#combinded">Combined Elements</a>
-                <a class="row txt-nav p-2" href="#templates">Templates</a>
-                <a class="row txt-nav p-2" href="#citations">Citations</a>
+                <a class="row txt-nav p-3" href="#portfolio">Brainstrom</a>
+                <a class="row txt-nav p-3" href="#branding">Branding</a>
+                <a class="row txt-nav p-3" href="#typography">Typography</a>
+                <a class="row txt-nav p-3" href="#interactive">Interactive</a>
+                <a class="row txt-nav p-3" href="#layout">Layout/Grid</a>
+                <a class="row txt-nav p-3" href="#combinded">Combined Elements</a>
+                <a class="row txt-nav p-3" href="#templates">Templates</a>
+                <a class="row txt-nav p-3" href="index.html">Website</a>
+                <a class="row txt-nav p-3" href="citations.html">Citations</a>
             </nav>
         </div>
         
@@ -99,7 +100,7 @@
                             <p>
                                 Primary: Yellow <br>
                                 Hex: #FDDB3A <br>
-                                Shade: Dark Yellow <br>
+                                Shade: Dark Yellow<br>
                                 Hex: #EECD32<br>
                             </p>
                         </div>
@@ -113,10 +114,10 @@
                         </div>
                         <div class="col">
                             <p>
-                                Primary: Dark Grey <br>
-                                Hex: #41413A <br>
-                                Shade: Black <br>
-                                Hex: #232320 <br>
+                                Primary: Dark Grey)<br>
+                                Hex: #41413A<br>
+                                Shade: Black<br>
+                                Hex: #232320<br>
                             </p>
                         </div>
                     </div>
@@ -129,15 +130,16 @@
                         </div>
                         <div class="col">
                             <p>
-                                Primary: White <br>
-                                Hex: #F9F8F4 <br>
-                                Shade: Light Grey <br>
-                                Hex: #E2E0D9 <br>
+                                Primary: White<br>
+                                Hex: #F9F8F4<br>
+                                Shade: Light Grey<br>
+                                Hex: #E2E0D9<br>
                             </p>
                         </div>
                     </div>
 
                     <h5>CSS Selectors</h5>
+                    <p>SCSS Variables: ($yellow), ($yellow-shade), ($dark-grey), ($black), ($white),  ($light-grey)</p>
                     <p>.bkg-yellow</p>
                     <p>.bkg-yellow-shade</p>
                     <p>.bkg-dark-grey</p>
@@ -153,23 +155,24 @@
                     <h4 class="txt-italic-subtitle">Illustration</h4>
 
                     <h5>Rendered Element</h5>
+                    <p>
+                        Self Portrait Illustration to be used on home and about pages.
+                    </p>
 
                     <!-- Illustration -->
                     <div class="row">
                         <div class="col">
-                            <img class="img-thumbnail" src="img/self-illustration.png" alt="Self Portrait Illustration of Alyssa Lalani">
+                            <img class="img-100" src="img/home/circle-illustration.png" alt="Self Portrait Illustration of Alyssa Lalani">
                         </div>
-                        <div class="col">
-                            <p>
-                                Self Portrait Illustration to be used on home or about pages.
-                            </p>
+                        <div class="col-md-6 col-lg-6 margin-bottom justify-content-center order-md-2">
+                            <img class="img-100-nb" src="img/self-illustration.png" alt="Self Portrait Illustration of Alyssa Lalani">
                         </div>
                     </div>
 
-
                     <h5>CSS Selectors</h5>
-                    <p>.img-thumbnail</p>
-                </section> <!-- end color scheme -->
+                    <p>.img-100</p>
+                    <p>.img-100-nb</p>
+                </section> <!-- end illustration -->
             </section> <!-- end branding section -->
 
 
@@ -248,7 +251,7 @@
                     <h5>Rendered Element:</h5>
 
                     <div class="row m-1">
-                        <h3>Major Title</h3>
+                        <h2>Major Title</h2>
                         <p class="m-1">  
                             Will take up the space of container/flex grid, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. At habitant vitae urna tempor, est, sed mi. This is an in-text link massa tristique. Sed varius justo, venenatis sagittis vitae tempus, justo. Scelerisque enim, purus tristique ultricies. Nunc aliquam mauris in arcu sem purus quis.
                         </p>
@@ -639,38 +642,44 @@
             <section id="combinded">
                 <h3 class="section-border">Combined Elements</h3>
     
-                    <!-- Navigation -->
-                    <section class="row">
-                        <h4 class="txt-italic-subtitle">Navigation</h4>
-    
-                        <h5>Rendered Element:</h5>
+                <!-- Navigation -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Navigation</h4>
 
-                        <nav class="navbar">
-                            <div class="container-fluid">
-                              <div class="navbar-header">
-                                  <a class="txt-nav p-2 topnav-home" href="index.html">Alyssa Lalani Portfolio</a>
-                              </div>
-                
-                              <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"><i class="fa fa-bars fa-2x"></i></i></button>
-                    
-                              <ul class="navbar-nav" id="nav-items">
-                                  <li class="nav-section"><a href="index.html" class="txt-nav p-2">Home</a></li>
-                                  <li class="nav-section"><a href="about.html" class="txt-nav p-2">About</a></li>
-                                  <li><a href="contact.html" class="txt-nav p-2">Contact</a></li>
-                              </ul>
+                    <h5>Rendered Element:</h5>
+
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="txt-nav p-2 topnav-home" href="index.html">Alyssa Lalani Portfolio</a>
                             </div>
-                        </nav>
+            
+                            <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"><i class="fa fa-bars fa-2x"></i></i></button>
+                
+                            <ul class="navbar-nav" id="nav-items">
+                                <li class="nav-section"><a href="index.html" class="txt-nav p-2">Home</a></li>
+                                <li class="nav-section"><a href="about.html" class="txt-nav p-2">About</a></li>
+                                <li><a href="contact.html" class="txt-nav p-2">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
 
-                        <h5>CSS Selector:</h5>
-                        <p>.navbar</p>
-                        <p>.container-fluid</p>
-                        <p>.navbar-header</p>
-                        <p>.txt-nav</p>
-                        <p>.nav</p>
-                        <p>.navbar-nav</p>
-                        <p>.navbar-right</p>
-                          
-                    </section> <!-- end nav -->
+                    <h5>CSS Selector:</h5>
+                    <p>.navbar</p>
+                    <p>.container-fluid</p>
+                    <p>.navbar-header</p>
+                    <p>.txt-nav</p>
+                    <p>.topnav-home</p>
+                    <p>.navbar-nav</p>
+                    <p>#nav-toggle</p>
+                    <p>#nav-items</p>
+                        
+                </section> <!-- end nav -->
+
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Navigation</h4>
+
+                    <h5>Rendered Element:</h5>
 
                     <!-- Footer -->
                     <section>
@@ -727,58 +736,57 @@
                     </section>
 
 
-                        <h5>CSS Selector:</h5>
-                        <p>.col-lg-6</p>
-                        <p>.col-md-12</p>
-                        <p>.mb-4</p>
-                        <p>.mb-md-0</p>
-                        <p>.text-uppercase</p>
-                        <p>.list-unstyled</p>
-                        <p>.text-center</p>
-                        <p>.txt-footer</p>
-                        <p>.bg-copywrite</p>
-                    </section> <!-- end vav -->
+                    <h5>CSS Selector:</h5>
+                    <p>.col-lg-6</p>
+                    <p>.col-md-12</p>
+                    <p>.mb-4</p>
+                    <p>.mb-md-0</p>
+                    <p>.text-uppercase</p>
+                    <p>.list-unstyled</p>
+                    <p>.text-center</p>
+                    <p>.txt-footer</p>
+                    <p>.bg-copywrite</p>
+                </section> <!-- end vav -->
 
-                    <!-- Project Description Home -->
-                    <section class="row">
-                        <h4 class="txt-italic-subtitle">Project Description Home</h4>
-    
-                        <h5>Rendered Element:</h5>
+                <!-- Project Description Home -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Project Description Home</h4>
 
-                        <div class="container">
-                            <div class="row margin-top margin-bottom">
-                                <div class="col-md-6  margin-top">
-                                    <h2>Project Title Here</h2>
-                                    <h4>Design Type/Project Type</h4>
-                                    <p class="margin-top">
-                                        One line sentence describing the project (what it is/does) 
-                                        <br><br>
-                                        Role: <br>
-                                        What was my role within the development of the project 
-                                        <br><br>
-                                        Goal: 
-                                        What was the goal of the project, outcomes, why is it important
-                                    </p>
-                                    <a class="row btn-call-action m-3" href="">Learn More</a>
-                                </div>
-                                <div class="col-md-6">
+                    <h5>Rendered Element:</h5>
+
+                        <!-- Project 1 -->
+                        <div class="container margin-t-9">
+                            <div class="row margin-top margin-bottom justify-content-center">
+                                <div class="col-md-5">
                                     <a href="">
-                                        <img class="img-link-project-home" src="img/self-illustration.png" alt="Self Portrait Illustration">
+                                    <img class="img-link-project-home drop-shadow" src="img/self-illustration.png" alt="project description">
                                     </a>
                                 </div>
+                                <div class="col-md-6">
+                                    <h2>Project Name</h2>
+                                    <h4>Project Type | Design Style</h4>
+                                    <p class="margin-top">
+                                        One line sentence describing the project (what it is/does)
+                                    <br><br>
+                                    Role: What was my role within the development of the project
+                                    <br><br>
+                                    Goal: What was the goal of the project, outcomes, why is it important
+                                    </p>
+                                    <a class="row btn-call-action m-3" href="project-sunnies.html">View Project</a>
+                                </div>
                             </div>
-                        </div>
+                          </div>
 
-                        <h5>CSS Selector:</h5>
-                        <p>.col-md-6</p>
-                        <p>.margin-top</p>
-                        <p>.margin-bottom</p>
-                        <p>h2</p>
-                        <p>h4</p>
-                        <p>p</p>
-                        <p>.btn-call-action</p>
-                        <p>.img-link-project-home</p>
-                    </section> <!-- end vav -->
+                    <h5>CSS Selector:</h5>
+                    <p>.col-md-6</p>
+                    <p>.margin-top</p>
+                    <p>.margin-bottom</p>
+                    <p>h2</p>
+                    <p>h4</p>
+                    <p>p</p>
+                    <p>.btn-call-action</p>
+                    <p>.img-link-project-home</p>
+                </section> <!-- end vav -->
 
                      <!-- Project Detials Individual -->
                      <section class="row">
@@ -822,6 +830,190 @@
                     </section> <!-- end vav -->
                 </section> <!-- end combined elements section -->
 
+                <!-- Project feature img -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Project Feature Img</h4>
+
+                    <h5>Rendered Element:</h5>
+                    
+                    <div class="project-bkg-img-styleguide drop-shadow">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <h3 class="project-title">One sentence description of the project/product for overview. Get reader attention.</h3>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+
+                    <h5>CSS Selector:</h5>
+                    <p>.project-#-bkg-img</p>
+                    <p>@mixin project-bkg-img($img)</p>
+                    <p>.project-title</p>
+                </section> <!-- end Project feature img -->
+
+
+                <!-- project img overview -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Project Image Overview</h4>
+
+                    <h5>Rendered Element:</h5>
+                    
+                    <section>
+                        <div class="container margin-t-9">
+                          <div class="row margin-top margin-bottom">
+                            <div class="col-md-12">
+                              <img class="img-100-nb" src="img/self-illustration.png" alt="img description">
+                            </div>
+                          </div>
+                          <div class="row margin-top margin-bottom justify-content-around">
+                            <div class="col-md-6">
+                              <img class="img-100-nb" src="img//self-illustration.png" alt="img description">
+                            </div>
+                            <div class="col-md-6">
+                              <img class="img-100-nb" src="img/self-illustration.png" alt="img description">
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    
+
+                    <h5>CSS Selector:</h5>
+                    <p>.col-md-12</p>
+                    <p>.col-md-6</p>
+                    <p>.img-100-nb</p>
+                    <p>.container</p>
+                    <p>.margin-top .margin-bottom</p>
+                </section> <!-- end Project feature img -->
+
+                 <!-- project reflection -->
+                 <section class="row">
+                    <h4 class="txt-italic-subtitle">Project Reflection</h4>
+
+                    <h5>Rendered Element:</h5>
+                    
+                    <section class="margin-t-9 container-fluid bkg-white p-4">
+                        <div class="row margin-top margin-bottom justify-content-center">
+                          <div class="col-md-6">
+                            <h2 class="text-center">Reflection</h2>
+                            <p class="text-center">
+                              Upon reflection on this project, I enjoyed the constraints of a monochromatic design as it allowed me to focus solely on the form of the logo. At first I found it difficult to portray the tone and passion of the company without using color, however, I think it was exactly this challenge that pushed me as a designer. Looking back I think there is room for improvement in the typography, paying attention to the readability.
+                            </p>
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row justify-content-end">
+                              <a class="btn-outline-dark m-3" href="project-vancouver.html">Next Project</a>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    
+
+                    <h5>CSS Selector:</h5>
+                    <p>.text-center</p>
+                    <p>.bkg-white</p>
+                    <p>.container-fluid</p>
+                    <p>.btn-outline-dark</p>
+                </section> <!-- end Project feature img -->
+
+                <!-- Call to action contact me -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Call to Action Contact</h4>
+
+                    <h5>Rendered Element:</h5>
+                    
+                    <section class="margin-t-9 container-fluid bkg-yellow p-4">
+                        <div class="row margin-top margin-bottom justify-content-center">
+                          <div class="col-md-6">
+                            <h2 class="text-center">Let's Be Friends!</h2>
+                            <p class="text-center">
+                              I enjoy using my design expertise to build meaningful projects and collaborate with fellow creatives. If you would like to collaborate or want geek over design systems and layouts, send me a message.
+                            </p>
+                            <div class="row bkg-yellow justify-content-center">
+                              <a class="row btn-light m-3" href="contact.html">Contact</a>
+                            </div>
+                          </div>
+                  
+                        </div>
+                  
+                      </section>
+                    
+
+                    <h5>CSS Selector:</h5>
+                    <p>.text-center</p>
+                    <p>.bkg-yellow</p>
+                    <p>.container-fluid</p>
+                    <p>.btn-light</p>
+                </section> <!-- end Project feature img -->
+
+                <!-- About Page process step -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">About Page Process Step</h4>
+
+                    <h5>Rendered Element:</h5>
+                    
+                    <div class="col-md-4">
+                        <h1>01</h1>
+                        <h4>Ideation</h4>
+                        <p>
+                            Creating a design concept and deciding on scope sets the foundation of a project. This includes building a sitemap, creating user flows, and categorizing features.
+                        </p>
+                    </div>
+                    
+
+                    <h5>CSS Selector:</h5>
+                    <p>.col-md-4</p>
+                    <p>h1</p>
+                    <p>.h4</p>
+                    <p>p</p>
+                </section> <!-- end About Page process step -->
+
+                <!-- Contact form collection -->
+                <section class="row">
+                    <h4 class="txt-italic-subtitle">Contact Form Style</h4>
+
+                    <h5>Rendered Element:</h5>
+                    
+                    <div class="margin-t-3">
+                        <form>
+                            <div class="row justify-content-center">
+                                <div class="form-group col-md-4">
+                                    <label for="formGroupExampleInput">Name:</label>
+                                    <input type="text" id="formGroupExampleInput" placeholder="Jane Doe">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="formGroupExampleInput2">Email:</label>
+                                    <input type="text" id="formGroupExampleInput2" placeholder="jane@gmail.come">
+                                  </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="form-group col-md-8">
+                                    <label for="message">Message:</label>
+                                    <textarea class="padding-b-3" id="message" name="message" placeholder="Write a message..."></textarea>
+                                  </div> 
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="form-group col-md-8">
+                                    <button type="submit" value="submit" class="row btn-submit m-3">Submit</button>
+                                    <button type="reset" value="reset" class="row btn-reset m-3">Reset</button>
+                                </div>
+                            </div>
+                            
+                          </form>
+                    </div>
+                    
+
+                    <h5>CSS Selector:</h5>
+                    <p>.row</p>
+                    <p>.justify-content-center</p>
+                    <p>.form-group</p>
+                    <p>.col-md-4</p>
+                    <p>.col-md-8</p>
+                    <p>.padding-b-3</p>
+                    <p>.btn-submit</p>
+                    <p>.btn-reset</p>
+                </section> <!-- end About Page process step -->
+
                 <!-- ----------------------- TEMPLATES ------------------------------------------>
                 <section id="templates">
                     <h3 class="section-border">Templates</h3>
@@ -837,12 +1029,17 @@
 
                 <a class="row btn-dark m-3" href="citations.html" target="_blank">Citations</a>
             </section> <!-- end combined elements section -->
+
+            <!-- ----------------------- Link To Website ------------------------------------------>
+            <section>
+                <h3 class="section-border">Portfolio Website</h3>
+
+                <a class="row btn-dark m-3" href="index.html" target="_blank">Portfolio Website</a>
+            </section> <!-- end combined elements section -->
    
             
         </div>
     </div>
-    
-
     
     
     <!------------------------------------ SCRIPTS --------------------------------------------> 
