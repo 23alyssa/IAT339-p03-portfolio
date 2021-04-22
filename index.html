@@ -13,6 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="css/variables.css" rel="stylesheet">
     <link href="css/breakpoints.css" rel="stylesheet">
     <link href="css/components.css" rel="stylesheet">
@@ -28,14 +30,17 @@
         <!-- Navigation for site -->
         <nav class="navbar">
             <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="txt-nav p-2" href="index.html">Alyssa Lalani Portfolio</a>
-            </div>
-  
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="about.html" class="txt-nav p-2">About</a></li>
-                <li><a href="contact.html" class="txt-nav p-2">Contact</a></li>
-            </ul>
+              <div class="navbar-header">
+                  <a class="txt-nav p-2 topnav-home" href="index.html">Alyssa Lalani Portfolio</a>
+              </div>
+
+              <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"><i class="fa fa-bars fa-2x"></i></i></button>
+    
+              <ul class="navbar-nav" id="nav-items">
+                  <li class="nav-section"><a href="index.html" class="txt-nav p-2">Home</a></li>
+                  <li class="nav-section"><a href="about.html" class="txt-nav p-2">About</a></li>
+                  <li><a href="contact.html" class="txt-nav p-2">Contact</a></li>
+              </ul>
             </div>
         </nav>
       </header>
@@ -204,6 +209,11 @@
         </footer>
         <!-- Footer -->
     </section>
+
+
+    
+    <!------------------------------------ SCRIPTS --------------------------------------------> 
+    <script src="javascript/main.js"></script>
     
    <!-- BOOTSTRAP Optional JavaScript; choose one of the two! -->
 

@@ -29,15 +29,18 @@
       <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="txt-nav p-2" href="#">Alyssa Lalani Portfolio</a>
+              <a class="txt-nav p-2 topnav-home" href="index.html">Alyssa Lalani Portfolio</a>
           </div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="txt-nav p-2">About</a></li>
-            <li><a href="#" class="txt-nav p-2">Contact</a></li>
+          <button id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"><i class="fa fa-bars fa-2x"></i></i></button>
+
+          <ul class="navbar-nav" id="nav-items">
+              <li class="nav-section"><a href="index.html" class="txt-nav p-2">Home</a></li>
+              <li class="nav-section"><a href="about.html" class="txt-nav p-2">About</a></li>
+              <li><a href="contact.html" class="txt-nav p-2">Contact</a></li>
           </ul>
         </div>
-      </nav>
+    </nav>
     </header>
 
     <section class="container margin-t-9"> 

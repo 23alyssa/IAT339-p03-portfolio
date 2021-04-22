@@ -58,3 +58,37 @@
 
 }
 
+/* NAV MEDIA Q*/
+@media screen and (max-width: 597px) {
+
+    #nav-items {
+        @include flex-direction(column);
+        display: inline-block;
+    }
+  
+    .topnav-home {
+      padding: 0;
+    }
+
+    .navbar-nav {
+        margin-top: 0.6em;
+        float: none;
+        text-align: center;
+        background-color: #F2F2F2;
+        border-radius: 2rem;
+        width: 90vw;
+
+    }
+
+    .nav-section {
+        border: {
+            bottom-width: 0.15rem;
+            bottom-style: solid;
+            bottom-color:  $light-grey;
+        }
+        width: 90vw;
+        padding-bottom: 0.6em;
+    }
+  
+}
+

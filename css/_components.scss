@@ -131,6 +131,23 @@ li {
 
 /* ----- 3. INTERACTIVE -------------------------------------------------------*/
 
+#nav-toggle.hidden, #nav-items.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+.topnav-home {
+    display:inline-flex;
+    padding: 0.6rem;
+    text-decoration: none;
+}
+
+button {
+    text-shadow: none;
+    background-color: transparent;
+    border: none;
+}
+
 .txt-p-link {
     @include set-font($black, 'Work Sans', 1.3rem, normal, bold);
     line-height: 1.948rem;
@@ -252,8 +269,6 @@ input[type=radio], input[type=checkbox] {
     color: $yellow;
 }
 
-
-
 .img-link {
     padding: 0.3rem;
     max-width: 30%;
@@ -340,6 +355,10 @@ input[type=radio], input[type=checkbox] {
     @include flex-direction(row);
 }
 
+#nav-items {
+    @include flex-direction(row);
+}
+
 .txt-nav {
     @include set-font($black, 'Work Sans', 1.5rem, normal, 500);
     text-decoration: none;
@@ -350,7 +369,6 @@ input[type=radio], input[type=checkbox] {
 }
 
 /* foot content*/
-
 .bg-light-grey {
     background-color: $light-grey;
 }
