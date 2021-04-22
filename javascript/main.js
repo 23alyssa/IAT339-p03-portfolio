@@ -12,6 +12,19 @@ var navItems = document.querySelector("#nav-items");
 
 var navFirstItem = document.querySelector("#nav-items a");
 
+
+
+if (width < 610) {
+    console.log('nav is closed & show icon on page load');
+
+    navToggle.classList.remove("hidden");
+    navToggle.setAttribute("aria-hidden", "false");
+
+    navItems.classList.add("hidden");
+    navItems.setAttribute("aria-hidden", "true");
+}
+
+
 window.addEventListener("resize", function() {
 	width = window.innerWidth;
 
@@ -21,12 +34,10 @@ window.addEventListener("resize", function() {
         console.log("Window width is less than 500px, collapsing menu.");
 
         navToggle.classList.remove("hidden");
-
         navToggle.setAttribute("aria-hidden", "false");
 
 
         navItems.classList.add("hidden");
-
         navItems.setAttribute("aria-hidden", "true");
 
 
@@ -35,6 +46,8 @@ window.addEventListener("resize", function() {
     }
 
     else {
+
+        console.log("Window width is less than 500px, collapsing menu.");
 
         navToggle.classList.add("hidden");
         navToggle.setAttribute("aria-hidden", "true");
@@ -69,6 +82,16 @@ navToggle.addEventListener("click",
 
 			navItems.setAttribute("aria-hidden", "true");
 			navToggle.setAttribute("aria-expanded", "false");
+
+            navToggle.classList.remove("hidden");
 		}
 	}
 );
+
+
+
+//reset contact form
+function resetClear() {
+    document.getElementById("contactForm").reset();
+    document.getElementById("paymentForm").reset();
+  }
